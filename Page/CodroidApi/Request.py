@@ -10,7 +10,7 @@ import time
 
 
 class Request:
-    # _ws = websocket.WebSocketApp
+    # _ws = CodroidApi.WebSocketApp
     def __init__(self, host: str, port: str, queueSize: int = 100):
         self._host: str = host
         self._port: str = port
@@ -65,7 +65,7 @@ class Request:
                 print("unknown message: {}".format(message))
 
     def onClose(self, _ws):
-        print("websocket is closed")
+        print("CodroidApi is closed")
         self._connected_event.clear()  # 连接断开，清除通知
 
     def close(self):
@@ -91,7 +91,7 @@ class Request:
 
             if self._ws.sock is None:
                 requestData.error(ResponseCode.NetError,
-                                  "websocket is not connected")
+                                  "CodroidApi is not connected")
                 return requestData.future()
             else:
                 self._id += 1

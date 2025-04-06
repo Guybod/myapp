@@ -12,8 +12,6 @@ class BaseFrame(QFrame):
     def setupUi(self):
         self.init_ui()
         self.init_layout()
-        self.show()
-        self.bind()
 
 
     @abstractmethod

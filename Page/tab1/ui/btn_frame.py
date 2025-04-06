@@ -1,4 +1,4 @@
-"""btn_frame.py"""
+"""BtnFrame"""
 
 from PySide6.QtWidgets import QHBoxLayout, QPushButton
 
@@ -7,7 +7,7 @@ from Page.style.style import Style
 
 
 class BtnFrame(BaseFrame):
-    def __init__(self):
+    def __init__(self,):
         super().__init__()
         self.setupUi()
         self.set_style()
@@ -19,8 +19,8 @@ class BtnFrame(BaseFrame):
         self.btn_robot_manual  = QPushButton("手动", self)
         self.btn_robot_auto = QPushButton("自动", self)
         self.btn_robot_safety = QPushButton("救援模式上电", self)
-        self.btn_robot_on1 = QPushButton("？？", self)
-        self.btn_robot_on2 = QPushButton("？？", self)
+        self.btn_robot_on1 = QPushButton("on1", self)
+        self.btn_robot_on2 = QPushButton("on2", self)
 
 
     def init_layout(self):

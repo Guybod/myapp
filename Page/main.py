@@ -1,4 +1,4 @@
-"""main.py"""
+"""MainForm"""
 
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
@@ -11,6 +11,7 @@ class MainForm(QMainWindow):
         super().__init__()
         self.ui = MainApp()  # 创建 Page 对象
         self.setCentralWidget(self.ui)
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

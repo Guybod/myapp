@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading Page file 'designer.ui'
+## Form generated from reading UI file 'designer.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.3
+## Created by: Qt User Interface Compiler version 6.8.2
 ##
-## WARNING! All changes made in this file will be lost when recompiling Page file!
+## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
@@ -17,7 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QLineEdit, QPlainTextEdit, QPushButton, QSizePolicy,
-    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
+    QSpacerItem, QTabWidget, QVBoxLayout, QWidget)
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -26,15 +26,15 @@ class Ui_Form(object):
         Form.resize(686, 633)
         self.horizontalLayout_10 = QHBoxLayout(Form)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.stackedWidget = QStackedWidget(Form)
-        self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidgetPage1 = QWidget()
-        self.stackedWidgetPage1.setObjectName(u"stackedWidgetPage1")
-        self.verticalLayout_3 = QVBoxLayout(self.stackedWidgetPage1)
+        self.tabWidget = QTabWidget(Form)
+        self.tabWidget.setObjectName(u"tabWidget")
+        self.tabWidgetPage1 = QWidget()
+        self.tabWidgetPage1.setObjectName(u"tabWidgetPage1")
+        self.verticalLayout_3 = QVBoxLayout(self.tabWidgetPage1)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.tab1_ipframe = QFrame(self.stackedWidgetPage1)
+        self.tab1_ipframe = QFrame(self.tabWidgetPage1)
         self.tab1_ipframe.setObjectName(u"tab1_ipframe")
-        self.tab1_ipframe.setFrameShape(QFrame.NoFrame)
+        self.tab1_ipframe.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout = QHBoxLayout(self.tab1_ipframe)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.IPlabel = QLabel(self.tab1_ipframe)
@@ -48,12 +48,12 @@ class Ui_Form(object):
 
         self.horizontalLayout.addWidget(self.IPEdit)
 
-        self.pushButton = QPushButton(self.tab1_ipframe)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMinimumSize(QSize(75, 25))
-        self.pushButton.setMaximumSize(QSize(75, 25))
+        self.connect = QPushButton(self.tab1_ipframe)
+        self.connect.setObjectName(u"connect")
+        self.connect.setMinimumSize(QSize(75, 25))
+        self.connect.setMaximumSize(QSize(75, 25))
 
-        self.horizontalLayout.addWidget(self.pushButton)
+        self.horizontalLayout.addWidget(self.connect)
 
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
@@ -72,9 +72,9 @@ class Ui_Form(object):
 
         self.verticalLayout_3.addWidget(self.tab1_ipframe)
 
-        self.tab1_btnframe = QFrame(self.stackedWidgetPage1)
+        self.tab1_btnframe = QFrame(self.tabWidgetPage1)
         self.tab1_btnframe.setObjectName(u"tab1_btnframe")
-        self.tab1_btnframe.setFrameShape(QFrame.NoFrame)
+        self.tab1_btnframe.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_2 = QHBoxLayout(self.tab1_btnframe)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.on_btn = QPushButton(self.tab1_btnframe)
@@ -122,9 +122,9 @@ class Ui_Form(object):
 
         self.verticalLayout_3.addWidget(self.tab1_btnframe)
 
-        self.tab1_logframe = QFrame(self.stackedWidgetPage1)
+        self.tab1_logframe = QFrame(self.tabWidgetPage1)
         self.tab1_logframe.setObjectName(u"tab1_logframe")
-        self.tab1_logframe.setFrameShape(QFrame.NoFrame)
+        self.tab1_logframe.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_3 = QHBoxLayout(self.tab1_logframe)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.logTextEdit = QPlainTextEdit(self.tab1_logframe)
@@ -134,7 +134,7 @@ class Ui_Form(object):
 
         self.logframe_btnframe = QFrame(self.tab1_logframe)
         self.logframe_btnframe.setObjectName(u"logframe_btnframe")
-        self.logframe_btnframe.setFrameShape(QFrame.NoFrame)
+        self.logframe_btnframe.setFrameShape(QFrame.Shape.NoFrame)
         self.verticalLayout = QVBoxLayout(self.logframe_btnframe)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.pushButton_2 = QPushButton(self.logframe_btnframe)
@@ -188,14 +188,14 @@ class Ui_Form(object):
 
         self.verticalLayout_3.addWidget(self.tab1_logframe)
 
-        self.stackedWidget.addWidget(self.stackedWidgetPage1)
-        self.stackedWidgetPage2 = QWidget()
-        self.stackedWidgetPage2.setObjectName(u"stackedWidgetPage2")
-        self.verticalLayout_7 = QVBoxLayout(self.stackedWidgetPage2)
+        self.tabWidget.addTab(self.tabWidgetPage1, "")
+        self.tabWidgetPage2 = QWidget()
+        self.tabWidgetPage2.setObjectName(u"tabWidgetPage2")
+        self.verticalLayout_7 = QVBoxLayout(self.tabWidgetPage2)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
-        self.tab2_socketconnectframe = QFrame(self.stackedWidgetPage2)
+        self.tab2_socketconnectframe = QFrame(self.tabWidgetPage2)
         self.tab2_socketconnectframe.setObjectName(u"tab2_socketconnectframe")
-        self.tab2_socketconnectframe.setFrameShape(QFrame.NoFrame)
+        self.tab2_socketconnectframe.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_5 = QHBoxLayout(self.tab2_socketconnectframe)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.label_3 = QLabel(self.tab2_socketconnectframe)
@@ -218,14 +218,14 @@ class Ui_Form(object):
 
         self.verticalLayout_7.addWidget(self.tab2_socketconnectframe)
 
-        self.tab2_socketclientframe1 = QFrame(self.stackedWidgetPage2)
+        self.tab2_socketclientframe1 = QFrame(self.tabWidgetPage2)
         self.tab2_socketclientframe1.setObjectName(u"tab2_socketclientframe1")
-        self.tab2_socketclientframe1.setFrameShape(QFrame.NoFrame)
+        self.tab2_socketclientframe1.setFrameShape(QFrame.Shape.NoFrame)
         self.verticalLayout_4 = QVBoxLayout(self.tab2_socketclientframe1)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.socketportframe1 = QFrame(self.tab2_socketclientframe1)
         self.socketportframe1.setObjectName(u"socketportframe1")
-        self.socketportframe1.setFrameShape(QFrame.NoFrame)
+        self.socketportframe1.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_4 = QHBoxLayout(self.socketportframe1)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.label_2 = QLabel(self.socketportframe1)
@@ -261,14 +261,14 @@ class Ui_Form(object):
 
         self.verticalLayout_7.addWidget(self.tab2_socketclientframe1)
 
-        self.tab2_socketclientframe2 = QFrame(self.stackedWidgetPage2)
+        self.tab2_socketclientframe2 = QFrame(self.tabWidgetPage2)
         self.tab2_socketclientframe2.setObjectName(u"tab2_socketclientframe2")
-        self.tab2_socketclientframe2.setFrameShape(QFrame.NoFrame)
+        self.tab2_socketclientframe2.setFrameShape(QFrame.Shape.NoFrame)
         self.verticalLayout_5 = QVBoxLayout(self.tab2_socketclientframe2)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.socketportframe2 = QFrame(self.tab2_socketclientframe2)
         self.socketportframe2.setObjectName(u"socketportframe2")
-        self.socketportframe2.setFrameShape(QFrame.NoFrame)
+        self.socketportframe2.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_6 = QHBoxLayout(self.socketportframe2)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.label_4 = QLabel(self.socketportframe2)
@@ -304,14 +304,14 @@ class Ui_Form(object):
 
         self.verticalLayout_7.addWidget(self.tab2_socketclientframe2)
 
-        self.tab2_socketserverframe = QFrame(self.stackedWidgetPage2)
+        self.tab2_socketserverframe = QFrame(self.tabWidgetPage2)
         self.tab2_socketserverframe.setObjectName(u"tab2_socketserverframe")
-        self.tab2_socketserverframe.setFrameShape(QFrame.NoFrame)
+        self.tab2_socketserverframe.setFrameShape(QFrame.Shape.NoFrame)
         self.verticalLayout_6 = QVBoxLayout(self.tab2_socketserverframe)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.socketserverportframe = QFrame(self.tab2_socketserverframe)
         self.socketserverportframe.setObjectName(u"socketserverportframe")
-        self.socketserverportframe.setFrameShape(QFrame.NoFrame)
+        self.socketserverportframe.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_7 = QHBoxLayout(self.socketserverportframe)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.label_5 = QLabel(self.socketserverportframe)
@@ -347,14 +347,14 @@ class Ui_Form(object):
 
         self.verticalLayout_7.addWidget(self.tab2_socketserverframe)
 
-        self.stackedWidget.addWidget(self.stackedWidgetPage2)
-        self.stackedWidgetPage3 = QWidget()
-        self.stackedWidgetPage3.setObjectName(u"stackedWidgetPage3")
-        self.verticalLayout_9 = QVBoxLayout(self.stackedWidgetPage3)
+        self.tabWidget.addTab(self.tabWidgetPage2, "")
+        self.tabWidgetPage3 = QWidget()
+        self.tabWidgetPage3.setObjectName(u"tabWidgetPage3")
+        self.verticalLayout_9 = QVBoxLayout(self.tabWidgetPage3)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.tab3_wsconnectframe = QFrame(self.stackedWidgetPage3)
+        self.tab3_wsconnectframe = QFrame(self.tabWidgetPage3)
         self.tab3_wsconnectframe.setObjectName(u"tab3_wsconnectframe")
-        self.tab3_wsconnectframe.setFrameShape(QFrame.NoFrame)
+        self.tab3_wsconnectframe.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_8 = QHBoxLayout(self.tab3_wsconnectframe)
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
         self.label_6 = QLabel(self.tab3_wsconnectframe)
@@ -375,14 +375,14 @@ class Ui_Form(object):
 
         self.verticalLayout_9.addWidget(self.tab3_wsconnectframe)
 
-        self.tab3_wssendframe = QFrame(self.stackedWidgetPage3)
+        self.tab3_wssendframe = QFrame(self.tabWidgetPage3)
         self.tab3_wssendframe.setObjectName(u"tab3_wssendframe")
-        self.tab3_wssendframe.setFrameShape(QFrame.NoFrame)
+        self.tab3_wssendframe.setFrameShape(QFrame.Shape.NoFrame)
         self.verticalLayout_8 = QVBoxLayout(self.tab3_wssendframe)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.wssendbtn_frame = QFrame(self.tab3_wssendframe)
         self.wssendbtn_frame.setObjectName(u"wssendbtn_frame")
-        self.wssendbtn_frame.setFrameShape(QFrame.NoFrame)
+        self.wssendbtn_frame.setFrameShape(QFrame.Shape.NoFrame)
         self.horizontalLayout_9 = QHBoxLayout(self.wssendbtn_frame)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.label_7 = QLabel(self.wssendbtn_frame)
@@ -419,22 +419,23 @@ class Ui_Form(object):
 
         self.verticalLayout_9.addWidget(self.tab3_wssendframe)
 
-        self.wsrecvedit = QPlainTextEdit(self.stackedWidgetPage3)
+        self.wsrecvedit = QPlainTextEdit(self.tabWidgetPage3)
         self.wsrecvedit.setObjectName(u"wsrecvedit")
 
         self.verticalLayout_9.addWidget(self.wsrecvedit)
 
-        self.stackedWidget.addWidget(self.stackedWidgetPage3)
-        self.stackedWidgetPage4 = QWidget()
-        self.stackedWidgetPage4.setObjectName(u"stackedWidgetPage4")
-        self.stackedWidget.addWidget(self.stackedWidgetPage4)
+        self.tabWidget.addTab(self.tabWidgetPage3, "")
+        self.tabWidgetPage4 = QWidget()
+        self.tabWidgetPage4.setObjectName(u"tabWidgetPage4")
+        self.tabWidget.addTab(self.tabWidgetPage4, "")
 
-        self.horizontalLayout_10.addWidget(self.stackedWidget)
+        self.horizontalLayout_10.addWidget(self.tabWidget)
 
 
         self.retranslateUi(Form)
+        self.connect.clicked.connect(self.logTextEdit.clear)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(Form)
@@ -444,7 +445,7 @@ class Ui_Form(object):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.IPlabel.setText(QCoreApplication.translate("Form", u"IP\uff1a", None))
         self.IPEdit.setText(QCoreApplication.translate("Form", u"192.168.101.100", None))
-        self.pushButton.setText(QCoreApplication.translate("Form", u"\u8fde\u63a5", None))
+        self.connect.setText(QCoreApplication.translate("Form", u"\u8fde\u63a5", None))
         self.label.setText(QCoreApplication.translate("Form", u"\u5f53\u524d\u72b6\u6001\uff1a", None))
         self.state_label.setText(QCoreApplication.translate("Form", u"\u672a\u77e5", None))
         self.on_btn.setText(QCoreApplication.translate("Form", u"\u4e0a\u7535", None))
@@ -453,6 +454,7 @@ class Ui_Form(object):
         self.to_auto_btn.setText(QCoreApplication.translate("Form", u"\u81ea\u52a8\u6a21\u5f0f", None))
         self.on_safety_btn.setText(QCoreApplication.translate("Form", u"\u6551\u63f4\u6a21\u5f0f\u4e0a\u7535", None))
         self.release.setText(QCoreApplication.translate("Form", u"\u5f85\u5b9a", None))
+        self.logTextEdit.setPlainText(QCoreApplication.translate("Form", u"sadasd", None))
         self.pushButton_2.setText(QCoreApplication.translate("Form", u"PushButton", None))
         self.pushButton_3.setText(QCoreApplication.translate("Form", u"PushButton", None))
         self.pushButton_4.setText(QCoreApplication.translate("Form", u"PushButton", None))
@@ -462,6 +464,7 @@ class Ui_Form(object):
         self.pushButton_9.setText(QCoreApplication.translate("Form", u"PushButton", None))
         self.pushButton_8.setText(QCoreApplication.translate("Form", u"PushButton", None))
         self.pushButton_10.setText(QCoreApplication.translate("Form", u"PushButton", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidgetPage1), "")
         self.label_3.setText(QCoreApplication.translate("Form", u"IP:", None))
         self.label_2.setText(QCoreApplication.translate("Form", u"\u5ba2\u6237\u7aef       \u7aef\u53e3\u53f7\uff1a", None))
         self.socketclientconnectbtn1.setText(QCoreApplication.translate("Form", u"\u8fde\u63a5", None))
@@ -472,6 +475,7 @@ class Ui_Form(object):
         self.label_5.setText(QCoreApplication.translate("Form", u"\u670d\u52a1\u7aef       \u7aef\u53e3\u53f7\uff1a", None))
         self.socketserverlistenbtn.setText(QCoreApplication.translate("Form", u"\u76d1\u542c", None))
         self.socketserversendbtn.setText(QCoreApplication.translate("Form", u"\u53d1\u9001", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidgetPage2), "")
         self.label_6.setText(QCoreApplication.translate("Form", u"url:", None))
         self.lineEdit_2.setText(QCoreApplication.translate("Form", u"192.168.101.100:9000", None))
         self.ws_connect_btn.setText(QCoreApplication.translate("Form", u"\u8fde\u63a5", None))
@@ -479,5 +483,7 @@ class Ui_Form(object):
         self.pushButton_11.setText(QCoreApplication.translate("Form", u"\u9009\u62e9json\u6587\u4ef6", None))
         self.pushButton_12.setText(QCoreApplication.translate("Form", u"\u4fdd\u5b58\u53d1\u9001\u533a\u5185\u5bb9", None))
         self.ws_send_btn.setText(QCoreApplication.translate("Form", u"\u53d1\u9001", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidgetPage3), "")
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidgetPage4), "")
     # retranslateUi
 

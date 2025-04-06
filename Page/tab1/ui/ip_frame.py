@@ -36,6 +36,7 @@ class IpFrame(BaseFrame):
     def set_style(self):
         self.style = Style()
         self.style.set_btn_style(self.btn_robot_connect)
-        self.style.set_line_edit_style(self.edit_ip, text="192.168.101.100")
+        self.style.set_line_edit_style(self.edit_ip)
+        self.edit_ip.setPlaceholderText("192.168.101.100")
         self.style.set_qlabel_style(self.label_ip, width=60, font_size=14, bold=True, alignment="left")
         self.style.set_qlabel_style(self.label_robot_state, font_size=14, bold=True, alignment="left")
