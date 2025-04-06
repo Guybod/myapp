@@ -58,6 +58,8 @@ class MenuFrame(BaseFrame):
         self.style = Style()
         self.style.set_line_edit_style(self.line_edit_ip, 160, 30)
         self.style.set_line_edit_style(self.line_edit_port, 160, 30)
+        # self.line_edit_ip.setPlaceholderText("127.0.0.1")
+        # self.line_edit_port.setPlaceholderText("8080")
         self.line_edit_ip.setText("127.0.0.1")
         self.line_edit_port.setText("8080")
         self.style.set_btn_style(self.btn_socket_connect)
