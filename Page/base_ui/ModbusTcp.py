@@ -1,4 +1,4 @@
-from pymodbus.client.sync import ModbusTcpClient
+from pymodbus.client import ModbusTcpClient
 from pymodbus.exceptions import ConnectionException, ModbusIOException
 
 
